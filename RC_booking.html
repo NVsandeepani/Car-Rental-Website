@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+        <title>Booking</title>
+        <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Custom CSS link  -->
+        <link rel="stylesheet" href="RC_css\home.css">
+    </head>
+    <body>
+        <div class ="container">
+            <header>
+
+                <a href="#" class="logo">ABS<span>Car Rental</span></a>
+            
+                <div id="menu" class="fas fa-bars"></div>
+            
+                <nav class="navbar">
+                    <a href="RC_home.html">Home</a>
+                    <a href="RC_Fleet.html">Fleet </a>
+                    <a href="RC_service.html">Our Service</a>
+                     <a href="RC_booking.html">Reserve a car</a>
+                    <a href="RC_contac.html">Contact Us</a>
+                </nav>
+            
+            </header>
+            
+            <h1 class="heading"><i>You Can Book Your Vehicle Now</i> </h1>
+            <!-- -----------------Booking  section-------------------  -->
+
+            <section class="Booking">
+
+                <div class="image">
+                    <img src="RC_Images/HD.jpg" alt="">
+                </div>
+                
+                <form action="" method="post">
+                
+                    <div class="inputBox">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="email" placeholder="Email"name="email">
+                        <input type="text" placeholder="Contact Number" name="conNumber">
+                        <input type="text" placeholder="Vehicle_ID"name="Vehicle_ID">
+                        <input type="text" placeholder="subject" class="box" name="subjects">
+                        <input type="text" placeholder="Pick Up Location" name="pickup"><br><br>
+                        <p>  pickup date   <p>Return date</p><br>
+                        <input type="date" placeholder="Pick Up Date" name="Pick_Up_Date">
+                        
+                        <input type="date" placeholder="Return_Date">
+                        <input type="text" placeholder="Number of days"name="NumOfDays">
+                        <input type="text" placeholder="Number of Vehicles"name="NumOfVehicle">
+                        <input type="text" placeholder="Total amount"name="totalamount">
+                        
+                    </div>
+                    <a href="RC_payment.html" class="btn">Request & Payment</a>
+                    
+            
+                </form>
+
+            </section>
+            
+
+<!-- footer section  -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>All our vehicles are well maintained and most importantly appearance/condition of both interior and exterior are kept in original standards all the time. We offer attractive rates with unmatched fringe of value additions to our customer.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                <a href="#">Home</a>
+                    <a href="#">Fleet</a>
+                    <a href="#">Our serices</a>
+                    <a href="#">Reserve a car</a>
+                    <a href="#">ContactUs</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    
+                </div>
+
+                <div class="box">
+                    <h3>contact us</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-envelope"></i> abscarrental@gmail.com </p>
+                <p> <i class="fas fa-map-marker-alt"></i> North Central Province,SriLanka. </p>
+                </div>
+
+            </div>
+
+            <div class="credit"> created by <span> V.Sandeepani </span> | all rights reserved </div>
+        </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+        <script>
+       // let cart = [];
+        let totalBill = 0;
+        let price=12000;
+        function updateCart() {
+            const NumOfDaysDiv = document.getElementById("NumOfDays");
+            const NumOfVehicleDiv = document.getElementById("NumOfVehicle");
+           
+
+            NumOfDaysDiv.innerHTML = "";
+            totalBill = 0;
+
+          //  cart.forEach((item, index) => {
+               // const NumOfDaysDiv = document.createElement("div");
+               // NumOfDaysDiv.classList.add("cart-item");
+              //  NumOfDaysDiv.textContent = `${item.item} - RS:${item.price}`;
+                
+
+                totalBill += NumOfDays.price.NumOfVehicle;
+          //  });
+
+           // totalBillDiv.textContent = ` RS:${totalBill}`;
+            const totalBillDiv = document.setElementById("totalamount"+ totalBill);
+        }
+    </script>
+                
+    </body>
+</html>

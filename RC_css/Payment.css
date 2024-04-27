@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --violet:#6c5ce7;
+  --pink:#160741;
+  --gradient:linear-gradient(90deg, var(--violet), var(--pink));
+}
+
+.body{
+  background:var(--gradient);
+}
+
+.body .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  min-height: 90vh;
+  overflow-x: hidden;
+}
+
+.body .container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.body .container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.body .container form .row .col{
+  flex:1 1 250px;
+}
+
+.body .container form .row .col .title{
+  font-size: 20px;
+  color:#020202;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.body .container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.body .container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+.body .container form .row .col .inputBox input{
+  width: 90%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.body .container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.body .container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.body .container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.body .container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.body .container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27033f;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body .container form .submit-btn:hover{
+  background: #2a1b7c;
+}

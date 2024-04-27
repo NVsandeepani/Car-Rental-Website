@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500600;700;800;900&display=swap");
+
+:root{
+    --violet:#6c5ce7;
+    --pink:#160741;
+    --purple:#6d1275;
+    --gradient:linear-gradient(90deg, var(--violet),  var(--purple), var(--pink));
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding:3rem 7%;
+    background-size: cover;
+    background-position: center;
+}
+.wrp{
+    width: 420px;
+    background-color: rgb(232, 232, 252);
+    border: 2px solid rgba(rgb(94, 131, 156));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(24, 9, 9, 0.2);
+    color: #000000;
+    border-radius: 10px;
+    padding: 30px 40px  ;
+}
+.wrp h1{
+    font: size 36px; 
+    text-align: center;
+}
+.wrp .input-box{
+    position: relative;
+    width: 420px;
+    height: 50px;
+    
+    margin: 30px 0;
+
+}
+.input-box input {
+    width: 80%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #706767;
+    padding: 20px 45px 20px 20px;
+
+}
+.input-box input::placeholder{
+    color: #0c0c0c;
+}
+.input-box i{
+position:absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 20px;
+
+}
+
+.wrp .rem-f{
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
+margin: -15px 0 15px;
+}
+.rem-f label input{
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+.rem-f a{
+    color: #333131;
+    text-decoration: none;
+}
+
+.rem-f a:hover{
+    text-decoration: underline;
+
+}
+.wrp .submit-btn{
+    width: 100%;
+    height: 45px;
+    background: #9b9cd3;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+
+}
+.wrp .regi-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.regi-link a {
+color: #03023d;
+text-decoration: none;
+font-weight: 600;
+}
+.regi-link a:hover{
+    text-decoration: underline;
+
+}
